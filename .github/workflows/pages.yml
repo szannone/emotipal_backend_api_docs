@@ -21,10 +21,13 @@ jobs:
         with:
           enablement: true   
 
+      - name: Inject cache buster
+        run: sed -i "s/%COMMIT_SHA%/${GITHUB_SHA}/g" index.html
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: .           
-          
+
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
