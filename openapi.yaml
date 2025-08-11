@@ -3,11 +3,11 @@ info:
   title: Emotipal API
   description: Emotipal backend API for emotional wellness platform with activities, submissions, reminders, and user management
   version: 1.0.0
-  contact:
-    name: Emotipal Support
-    email: support@emotipal.com
-  license:
-    name: Proprietary
+  # contact:
+  #   name: Emotipal Support
+  #   email: support@emotipal.com
+  # license:
+  #   name: Proprietary
     
 servers:
   - url: https://api.emotipal.com
